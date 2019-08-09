@@ -43,4 +43,8 @@ class Deck{
     cards=cards.sublist(handsize);
     return hand;
   }
+
+  removeCard(String suit, String rank){
+    cards.removeWhere((card) => card.suit==suit&& card.rank==rank);
+  }
 }
