@@ -15,9 +15,9 @@ class Deck{
   Deck(){
     var ranks=['Ace','One','Two','Three','Four','Five'];
     var suits=['Diamonds','Clubs','Spades','Hearts'];
-    for(var suit in suits){
+    for(var mySuit in suits){
       for(var rank in ranks){
-        var card=Card(rank, suit);
+        var card=Card(suit:mySuit, rank:rank);
         cards.add(card);
       }
     }

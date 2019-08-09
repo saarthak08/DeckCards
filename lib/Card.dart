@@ -3,7 +3,7 @@ class Card{
   String suit;
   String rank;
 
-  Card(String rank, String suit){
+  Card({String rank, String suit}){
     this.suit=suit;
     this.rank=rank;
   }
